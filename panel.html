@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Panel Swipe</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      
+      <script>
+         $( document ).on( "pagecreate", "#mypage", function() {
+            $( document ).on( "swipeleft swiperight", "#mypage", function( e ) {
+               if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+                  if ( e.type === "swipeleft" ) {
+                     $( "#right-panel" ).panel( "open" );
+                  } else if ( e.type === "swiperight" ) {
+                     $( "#left-panel" ).panel( "open" );
+                  }
+               }
+            });
+         });
+      </script>
+   </head>
+   
+   <body>
+      <div data-role = "page" id = "mypage">
+         <div data-role = "header" data-theme = "b">
+            <h2>Header</h2>
+            <a href = "#left-panel" data-icon = "carat-r" data-iconpos = "notext"  
+               class = "ui-nodisc-icon">Open left panel</a>
+            <a href = "#right-panel" data-icon = "carat-l" data-iconpos = "notext" 
+               class = "ui-nodisc-icon">Open right panel</a>
+         </div>
+         
+         <div role = "main" class = "ui-content">
+            <p>Swipe the panel left or right.</p>
+         </div>
+         
+         <div data-role = "panel" id = "left-panel" data-theme = "b">
+            <p>This is left panel.</p>
+
+
+<ul data-role = "listview">
+         <li><a href = "#chap"><img src="/img/image1.jpg>"></a></li>
+          <li><a href = "#chap"><img src="img/image2.jpg>"></a></li>
+           <li><a href = "#chap"><img src="img/image3.jpg>"></a></li>
+            <li><a href = "#chap"><img src="img/image4.jpg>"></a></li>
+             <li><a href = "#chap"><img src="img/image5.jpg>"></a></li>
+              <li><a href = "#chap"><img src="img/image6.jpg>"></a></li>
+<li><a href = "#chap"><img src="img/image7.jpg>"></a></li>
+              <li><a href = "#chap"><img src="img/image8.jpg>"></a></li>
+                            <li><a href = "#chap"><img src="img/image9.jpg>"></a></li>
+                                          <li><a href = "#chap"><img src="img/image10.jpg>"></a></li>
+                                        </ul>
+
+            <a href = "#" data-rel = "close" class = "ui-btn ui-btn-inline ui-icon-delete 
+               ui-btn-icon-left">Close Panel</a>
+         </div>
+         
+         <div data-role = "panel" id = "right-panel" data-display = "push" 
+            data-position = "right" data-theme = "b">
+            <p>This is right panel.</p>
+            <a href = "#" data-rel = "close" class = "ui-btn ui-btn-inline ui-icon-delete 
+               ui-btn-icon-right">Close Panel</a>
+         </div>
+      </div>
+   </body>
+</html>
