@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      <style>
+         .ui-dialog.dialog-actionsheet .ui-dialog-contain {
+            margin-top: 0;
+         }
+      </style>
+      <script>
+         $( document ).on( "pagecreate", "#chap",  function() {
+            $( document ).on( "swipeleft swiperight", "#chap", function( e ) {
+               if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+                  if ( e.type === "swipeleft" ) {
+                     $( "#right-panel" ).panel( "open" );
+                  } else if ( e.type === "swiperight" ) {
+                     $( "#left-panel" ).panel( "open" );
+                  }
+               }
+            });
+         });
+      </script>
+
+   </head>
+
+   <body>
+      
+   <body>
+
+
+<div data-role = "page" id = "boo">
+         <div data-role = "header">
+          <h1>Top Ten Books</h1>
+         </div>
+
+
+<div data-role = "main" class = "ui-content">
+<div class = "ui-grid-b">
+            <div class = "ui-block-a">
+            
+                  
+           
+           <a href="#chap"><img src="img/image1.jpg"></a>         
+         </div>
+            
+         
+            <div class = "ui-block-b">
+              
+           
+           
+           <a href="#chap"><img src="img/image2.jpg"></a>
+               
+         </div>
+           
+
+            <div class = "ui-block-c">
+               
+            <a href="#chap"><img src="img/image3.jpg"></a>
+               
+         </div>
+            
+         </div>
+
+
+
+<div class = "ui-grid-b">
+            <div class = "ui-block-a">
+
+           
+           
+           <a href="#chap"><img src="img/image4.jpg"></a>         
+         </div>
+          
+         
+            <div class = "ui-block-b">
+           
+           
+           <a href="#chap"><img src="img/image5.jpg"></a>
+               
+         </div>
+          
+            <div class = "ui-block-c">
+
+           
+           
+           <a href="#chap"><img src="img/image6.jpg"></a>
+               
+         </div>
+          
+         </div>
+            
+      
+<div class = "ui-grid-b">
+            <div class = "ui-block-a">
+               
+           
+           <a href="#chap"><img src="img/image7.jpg"></a>         
+         </div>
+            
+            <div class = "ui-block-b">
+               
+           
+           <a href="#chap"><img src="img/image8.jpg"></a>
+               
+         </div>
+            
+
+            <div class = "ui-block-c">
+           
+           
+           <a href="#chap"><img src="img/image9.jpg"></a>
+               
+         </div>
+            </div>
+             <div class = "ui-block-a">
+               
+           
+           
+           <a href="#chap"><img src="img/image10.jpg"></a>
+               
+         </div>
+            </div>
+         </div>   
+
+
+
+       
+         
+      
+
+      <div data-role = "page" id = "chap">
+         <div data-role = "header" data-theme="b">
+
+            <h1>My Book Reader</h1>
+            
+         </div>
+
+
+         <div data-role = "main" class = "ui-content">
+            <h2>The Last Leaf</h2>
+            <h3>O. Henry </h3>
+
+            <p>
+               William Sydney Porter (September 11, 1862 – June 5, 1910), known by his pen name O. Henry, was an American short story writer. His stories are known for their surprise endings.
+            </p>
+
+ <div data-role = "panel" id = "left-panel" data-theme = "b">
+            <p>This is left panel.</p>
+
+<ul data-role = "listview">
+         <li><a href = "#chap"><img src="img/image1.jpg"> The last leaf</a></li>
+          <li><a href = "#chap"><img src="img/image2.jpg"></a></li>
+           <li><a href = "#chap"><img src="img/image3.jpg"></a></li>
+            <li><a href = "#chap"><img src="img/image4.jpg"></a></li>
+             <li><a href = "#chap"><img src="img/image5.jpg"></a></li>
+              <li><a href = "#chap"><img src="img/image6.jpg"></a></li>
+<li><a href = "#chap"><img src="img/image7.jpg"></a></li>
+              <li><a href = "#chap"><img src="img/image8.jpg"></a></li>
+                            <li><a href = "#chap"><img src="img/image9.jpg"></a></li>
+                                          <li><a href = "#chap"><img src="img/image10.jpg"></a></li>
+                                        </ul>
+
+   
+         </div>
+       
+         
+      
+        <div>     
+            <a href="#ch1" data-transition = "turn" class="ui-btn">Start Reading Book</a>           
+         
+</div>
+</div>
+        
+
+      </div>
+
+      
+
+
+
+      <div data-role = "page" id = "ch1">
+         <div data-role = "header" data-theme="b">
+          <a href = "#left-panel" data-icon = "carat-r" data-iconpos = "notext"  
+               class = "ui-nodisc-icon">Open left panel</a>
+            <a href = "#right-panel" data-icon = "carat-l" data-iconpos = "notext" 
+               class = "ui-nodisc-icon">Open right panel</a>
+            <h1>My Book Reader</h1>
+         </div>
+
+         <div data-role = "main" class = "ui-content">
+
+            <h2>Chapter 1</h2>
+            
+            <p>
+               In a little district west of Washington Square the streets have run crazy and broken themselves into small strips called "places." These "places" make strange angles and curves. One Street crosses itself a time or two. An artist once discovered a valuable possibility in this street. Suppose a collector with a bill for paints, paper and canvas should, in traversing this route, suddenly meet himself coming back, without a cent having been paid on account!
+            </p>
+            
+            <p>
+              So, to quaint old Greenwich Village the art people soon came prowling, hunting for north windows and eighteenth-century gables and Dutch attics and low rents. Then they imported some pewter mugs and a chafing dish or two from Sixth Avenue, and became a "colony."
+            </p>
+           
+            <p>
+
+              At the top of a squatty, three-story brick Sue and Johnsy had their studio. "Johnsy" was familiar for Joanna. One was from Maine; the other from California. They had met at the table d'hôte of an Eighth Street "Delmonico's," and found their tastes in art, chicory salad and bishop sleeves so congenial that the joint studio resulted.
+           </p>
+ <div data-role = "panel" id = "left-panel" data-theme = "b">
+            <p>This is left panel.</p>
+
+<ul data-role = "listview">
+         <li><a href = "#chap"><img src="img/image1.jpg"> The last leaf</a></li>
+          <li><a href = "#chap"><img src="img/image2.jpg"></a></li>
+           <li><a href = "#chap"><img src="img/image3.jpg"></a></li>
+            <li><a href = "#chap"><img src="img/image4.jpg"></a></li>
+             <li><a href = "#chap"><img src="img/image5.jpg"></a></li>
+              <li><a href = "#chap"><img src="img/image6.jpg"></a></li>
+<li><a href = "#chap"><img src="img/image7.jpg"></a></li>
+              <li><a href = "#chap"><img src="img/image8.jpg"></a></li>
+                            <li><a href = "#chap"><img src="img/image9.jpg"></a></li>
+                                          <li><a href = "#chap"><img src="img/image10.jpg"></a></li>
+                                        </ul>
+
+         
+         </div>
+       
+           <div class = "ui-grid-b">
+            <div class = "ui-block-a">
+            
+                  <a href="#chap" data-transition = "turn" class = "ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-notext 
+                  ui-btn-inline">Previous Chapter</a> 
+            </div>
+         
+            <div class = "ui-block-b">
+                  <a href="#chap" data-transition = "turn" class = "ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext 
+                  ui-btn-inline">Home</a>
+            </div>
+
+            <div class = "ui-block-c">
+               
+                  <a href="#ch2" data-transition = "turn" class = "ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-notext 
+                  ui-btn-inline">Next Chapter</a>
+            </div>
+         </div>
+           
+                       
+         </div>
+
+         <div data-role = "footer">
+            <h1>Copyright by MAD4103 Fall2017 Class</h1>
+         </div>
+      </div>
+
+      <div data-role = "page" id = "ch2">
+         <div data-role = "header" data-theme="b">
+                    <a href = "#left-panel" data-icon = "carat-r" data-iconpos = "notext"  
+               class = "ui-nodisc-icon">Open left panel</a>
+            <h1>My Book Reader</h1>
+         </div>
+
+         <div data-role = "main" class = "ui-content">
+            <h2>Chapter 2</h2>
+            
+            <p>
+               "She - she wanted to paint the Bay of Naples some day." said Sue.
+            </p>
+            <p>
+                "Paint? - bosh! Has she anything on her mind worth thinking twice - a man for instance?"
+            </p>
+            <p>   
+             "A man?" said Sue, with a jew's-harp twang in her voice. "Is a man worth - but, no, doctor; there is nothing of the kind."
+          </p>
+          <p>
+            "Well, it is the weakness, then," said the doctor. "I will do all that science, so far as it may filter through my efforts, can accomplish. But whenever my patient begins to count the carriages in her funeral procession I subtract 50 per cent from the curative power of medicines. If you will get her to ask one question about the new winter styles in cloak sleeves I will promise you a one-in-five chance for her, instead of one in ten."
+         </p>
+         <p>
+              After the doctor had gone Sue went into the workroom and cried a Japanese napkin to a pulp. Then she swaggered into Johnsy's room with her drawing board, whistling ragtime.
+         </p>
+            
+            
+           <div class = "ui-grid-b">
+            <div class = "ui-block-a">
+            
+                  <a href="#ch1" data-transition = "turn" class = "ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-notext 
+                  ui-btn-inline">Previous Chapter</a> 
+            </div>
+         
+            <div class = "ui-block-b">
+                  <a href="#chap" data-transition = "turn" class = "ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext 
+                  ui-btn-inline">Home</a>
+            </div>
+
+            <div class = "ui-block-c">
+               
+                  <a href="#ch3" data-transition = "turn" class = "ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-notext 
+                  ui-btn-inline">Next Chapter</a>
+            </div>
+         </div>           
+         </div>
+
+         
+      </div>
+
+      <div data-role = "page" id = "ch3">
+         <div data-role = "header">
+          <a href = "#left-panel" data-icon = "carat-r" data-iconpos = "notext"  
+               class = "ui-nodisc-icon">Open left panel</a>
+            <h1>My Book Reader</h1>
+         </div>
+
+         <div data-role = "main" class = "ui-content">
+            <h2>Chapter 3</h2>
+            
+            <p>
+               In a little district west of Washington Square the streets have run crazy and broken themselves into small strips called "places." These "places" make strange angles and curves. One Street crosses itself a time or two. An artist once discovered a valuable possibility in this street. Suppose a collector with a bill for paints, paper and canvas should, in traversing this route, suddenly meet himself coming back, without a cent having been paid on account!
+            </p>
+            
+            <p>
+              So, to quaint old Greenwich Village the art people soon came prowling, hunting for north windows and eighteenth-century gables and Dutch attics and low rents. Then they imported some pewter mugs and a chafing dish or two from Sixth Avenue, and became a "colony."
+            </p>
+           
+            <p>
+
+              At the top of a squatty, three-story brick Sue and Johnsy had their studio. "Johnsy" was familiar for Joanna. One was from Maine; the other from California. They had met at the table d'hôte of an Eighth Street "Delmonico's," and found their tastes in art, chicory salad and bishop sleeves so congenial that the joint studio resulted.
+           </p>
+ <div data-role = "panel" id = "left-panel" data-theme = "b">
+            <p>This is left panel.</p>
+
+<ul data-role = "listview">
+         <li><a href = "#chap"><img src="img/image1.jpg"> The last leaf</a></li>
+          <li><a href = "#chap"><img src="img/image2.jpg"></a></li>
+           <li><a href = "#chap"><img src="img/image3.jpg"></a></li>
+            <li><a href = "#chap"><img src="img/image4.jpg"></a></li>
+             <li><a href = "#chap"><img src="img/image5.jpg"></a></li>
+              <li><a href = "#chap"><img src="img/image6.jpg"></a></li>
+<li><a href = "#chap"><img src="img/image7.jpg"></a></li>
+              <li><a href = "#chap"><img src="img/image8.jpg"></a></li>
+                            <li><a href = "#chap"><img src="img/image9.jpg"></a></li>
+                                          <li><a href = "#chap"><img src="img/image10.jpg"></a></li>
+                                        </ul>
+
+         
+         </div>
+
+           <div class = "ui-grid-b">
+            <div class = "ui-block-a">
+            
+                  <a href="#ch2" data-transition = "turn" class = "ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-notext 
+                  ui-btn-inline">Previous Chapter</a> 
+            </div>
+         
+            <div class = "ui-block-b">
+                  <a href="#chaps" data-transition = "turn" class = "ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext 
+                  ui-btn-inline">Home</a>
+            </div>
+
+            <div class = "ui-block-c">
+               
+                  <a href="#ch3" data-transition = "turn" class = "ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-notext 
+                  ui-btn-inline">Next Chapter</a>
+            </div>
+         </div>
+                      
+         </div>
+
+         
+      </div>
+   </body>
+</html>
