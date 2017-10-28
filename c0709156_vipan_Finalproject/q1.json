@@ -1,0 +1,83 @@
+{
+    "introduction":"jQuery Quiz ", 
+    "questions":[
+         {"question":"1. Which of the following is correct?", 
+         "answers":["jQuery is a JSON Library","jQuery is a JavaScript Library"],
+         "correct":1},
+        {"question":"2. jQuery uses CSS selectors to select elements?", 
+         "answers":["True","False"],
+         "correct":1},
+         {"question":"3. Which sign does jQuery use as a shortcut for jQuery?", 
+         "answers":[" The first div element","All div elements"],
+         "correct":0},
+        {"question":"4. Is jQuery a library for client scripting or server scripting? ", 
+         "answers":[" Client scripting","Server scripting"],
+         "correct":1},
+         {"question":"5.Is it possible to use jQuery together with AJAX?", 
+         "answers":["No"," Yes"],
+         "correct":2},
+         {"question":"6. The jQuery html() method works for both HTML and XML documents?",
+            "answers":["False","True"],
+            "correct":1
+         },
+         {"question":"7. What is the correct jQuery code to set the background color of all p elements to red?",
+            "answers":["manipulate","layout","style","css"],
+            "correct":1
+         },
+         {"question":"8. Which jQuery method is used to hide selected elements?",
+            "answers":[" hide()","display(none)","visible(false)","hidden()"],
+            "correct":1
+         },
+         {"question":"9. Which jQuery method is used to set one or more style properties for selected elements?",
+            "answers":[" style()","html()","css()"],
+            "correct":1
+         },
+         {"question":"10. Which jQuery method is used to perform an asynchronous HTTP request?",
+            "answers":[" jQuery.ajaxSetup()"," jQuery.ajax()"," jQuery.ajaxAsync()"],
+            "correct":1
+         },
+          {"question":"11. Which statement is true?",
+            "answers":[" To use jQuery, you do not have to do anything. Most browsers (Internet Explorer, Chrome, Firefox and Opera) have the jQuery library built in the browser"," To use jQuery, you can refer to a hosted jQuery library at Google","  To use jQuery, you must buy the jQuery library at www.jquery.com"],
+            "correct":1
+         },
+         {"question":"12. Which jQuery method is used to perform an asynchronous HTTP request?",
+            "answers":[" jQuery.ajaxSetup()"," jQuery.ajax()"," jQuery.ajaxAsync()"],
+            "correct":1
+         },
+         {"question":"13. What scripting language is jQuery written in?",
+            "answers":["c#","VBScript","JavaScript","C++"],
+            "correct":1
+         },
+         {"question":"14. Which jQuery function is used to prevent code from running, before the document is finished loading?",
+            "answers":[" $(document).load()"," $(body).onload()"," $(document).ready()"],
+            "correct":1
+         },
+         {"question":"15. Which jQuery method should be used to deal with name conflicts?",
+            "answers":["  noConflict()"," Conflict()"," nameConflict()", " nonameConflict()"],
+            "correct":1
+         },
+         {"question":"16. Which jQuery method is used to switch between adding/removing one or more classes (for CSS) from selected elements?",
+            "answers":[" altClass()"," Switch()","  toggleClass()", "  SwitchClass()"],
+            "correct":1
+         },
+         {"question":"17.  Is jQuery a W3C standard?",
+            "answers":["No","Yes,"],
+            "correct":1
+         },
+         {"question":"18. Which jQuery method is used to remove selected elements?",
+            "answers":[" Both methods can be used"," remove()","  detch()"],
+            "correct":1
+         },
+
+ {"question":"19. Which jQuery method returns the direct parent element of the selected element?",
+            "answers":["parent()"," parents()"," ancestar()","ancestars()"],
+            "correct":1
+         },
+          {"question":"20. The jQuery animate() method can be used to animate ANY CSS property?",
+            "answers":[" Yes"," Only properties containing numeric values"," All properties except the shorthand properties"],
+            "correct":1
+         }
+
+
+    ]
+}
