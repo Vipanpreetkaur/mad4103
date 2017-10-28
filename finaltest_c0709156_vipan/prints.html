@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" 
+         href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   </head>
+   
+   <body>
+      <div data-role = "page" id = "pageone">
+         <div data-role = "header">
+            <h1>Single Page</h1>
+         </div>
+ <form>
+         <div data-role = "main" class = "ui-content">
+          <form action="#copy">
+           <label>Name </label>
+             <input type="text" name="name" required>
+             <label>Email Address</label>
+          <input type="email" name="email" required>
+          <label>Contact address</label>
+          <input type="Number"  name="no" required>
+          <label>Number of copies requested for printout</label>
+          <select>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="a4"4</option>
+</select>
+          <label>Photo Size</label>
+          <select>
+  <option value="1">32*40</option>
+  <option value="2">8*10</option>
+  <option value="3">6*12</option>
+  <option value="a4">5*50</option>
+</select>
+          
+          <label>Date of delivery</label>
+          <input type="date" name="ddelivery" required>
+       <input type="submit"  onclick="confirm()" name="sub" value="Submit"> 
+
+</form>
+<script>
+        <script>
+function confirm() {
+
+//var p1=[$10,$20,$30,$40]
+    var copies = document.getElementById('copies');
+    var size = document.getElementById('size');
+     var price = document.getElementById('price');
+    alert('You chosen:'+'\n'+'\n'+'copies: '+copies.value +'\n'+'size: ' +size.value+'\n' +'price: ' +copies.value*10 +'\n');
+    
+}
+</script>
+ 
+ </div>
+         <div data-role = "footer">
+            <h1>Footer Text</h1>
+         </div>
+      </div>
+      <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+   </body>
+</html>
